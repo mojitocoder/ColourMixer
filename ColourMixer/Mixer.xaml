@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ColourMixer.Mixer">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" Android="0, 0, 0, 0" WinPhone="0, 0, 0, 0" />
+	</ContentPage.Padding>
+	<StackLayout Padding="10">
+		<Label Text="Colour Mixer" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" HeightRequest="60">
+		</Label>
+		<BoxView HorizontalOptions="FillAndExpand" HeightRequest="100" x:Name="boxViewColour" />
+		<Label Text="Red" />
+		<Slider Minimum="0" Maximum="1" x:Name="sliderRed" ValueChanged="OnColourSliderChanged" />
+		<Label Text="Green" />
+		<Slider Minimum="0" Maximum="1" x:Name="sliderGreen" ValueChanged="OnColourSliderChanged" />
+		<Label Text="Blue" />
+		<Slider Minimum="0" Maximum="1" x:Name="sliderBlue" ValueChanged="OnColourSliderChanged" />
+	</StackLayout>
+</ContentPage>
